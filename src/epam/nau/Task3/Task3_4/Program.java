@@ -11,6 +11,6 @@ public class Program {
         double t = new Scanner(System.in).nextDouble();
         System.out.println(">Print n: ");
         int alim = new Scanner(System.in).nextInt();
-        System.out.println(">Result: " + Arithmetic.SumGeometricelements(a1, t, alim));
+        System.out.println(">Result: " + Arithmetic_4.SumGeometricElements(a1, t, alim));
     }
 }

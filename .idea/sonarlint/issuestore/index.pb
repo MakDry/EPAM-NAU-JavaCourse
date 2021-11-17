@@ -19,3 +19,5 @@ Y
 )src/epam/nau/Task2/Task2_1/ArraysLib.java,2\9\29fe6d84667f2a47489a7be27aa906b98fae3cf2
 T
 $src/epam/nau/Task2/Task2_1/Main.java,2\a\2a340f8e52046daf451c1d20c24a53e105ef006b
+[
++src/epam/nau/Task3/Task3_1_2/SortOrder.java,2\a\2aa69d0c03f780c9d6893538d912dd485992850d

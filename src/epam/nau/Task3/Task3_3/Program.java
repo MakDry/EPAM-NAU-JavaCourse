@@ -10,6 +10,6 @@ public class Program {
         int n = new Scanner(System.in).nextInt();
         System.out.println(">Print t: ");
         int t = new Scanner(System.in).nextInt();
-        System.out.println(">Result: " + Arithmetic.MultArithmeticElements(a1, n, t));
+        System.out.println(">Result: " + Arithmetic_3.MultArithmeticElements(a1, n, t));
     }
 }

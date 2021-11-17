@@ -1,6 +1,6 @@
 package epam.nau.Task3.Task3_3;
 
-public class Arithmetic {
+public class Arithmetic_3 {
 
     public static int MultArithmeticElements(int a1, int n, int t) {
         int result = 1;
