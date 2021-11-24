@@ -37,3 +37,5 @@ Y
 )src/epam/nau/Task2/Task2_1/ArraysLib.java,2\9\29fe6d84667f2a47489a7be27aa906b98fae3cf2
 [
 +src/epam/nau/Task3/Task3_1_2/ArraysLib.java,f\f\ff467588ce44a6da50cd4103535115e113aa7df4
+Z
+*src/epam/nau/Task3/test/testTask3_3_4.java,2\7\273eacaa34085f725c6167ddb210868450633a3d
