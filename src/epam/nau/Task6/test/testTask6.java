@@ -21,7 +21,7 @@ public class testTask6 {
     Company workStaff;
 
     @BeforeEach
-    private void setUpTest(){
+    private void setUpTest() {
         person1 = new Manager("Jonathan", 10500, 120);
         person2 = new Manager("Lighter", 10174, 57);
         person3 = new Manager("Jordan", 10250, 152);
@@ -30,15 +30,17 @@ public class testTask6 {
         person6 = new SalesPerson("Hoft", 7677, 211);
 
     }
+
     @Test
-    void testTotalToPay(){
+    void testTotalToPay() {
         Employee[] arr = new Employee[]{person1, person3, person4, person2, person6, person5};
         workStaff = new Company(arr);
         workStaff.giveEverybodyBonus(new BigDecimal(3000));
         Assertions.assertEquals(81868, workStaff.totalToPay());
     }
+
     @Test
-    void testNameMaxSalary(){
+    void testNameMaxSalary() {
         Employee[] arr = new Employee[]{person3, person6, person2, person4, person5, person1};
         workStaff = new Company(arr);
         workStaff.giveEverybodyBonus(new BigDecimal(3000));

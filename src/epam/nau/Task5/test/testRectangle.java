@@ -2,36 +2,41 @@ package epam.nau.Task5.test;
 
 import epam.nau.Task5.Rectangle;
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 public class testRectangle {
-    @Test
-    void testArea(){
-        Rectangle rect = new Rectangle(6, 5);
-        Assertions.assertEquals(30, rect.area());
-        rect = new Rectangle(10, 5);
-        Assertions.assertEquals(50, rect.area());
-        rect = new Rectangle(1, 3);
-        Assertions.assertEquals(3, rect.area());
+    Rectangle rect1;
+    Rectangle rect2;
+    Rectangle rect3;
+
+    @BeforeEach
+    void setUpTest() {
+        rect1 = new Rectangle(6, 5);
+        rect2 = new Rectangle(10, 5);
+        rect3 = new Rectangle(1, 3);
     }
 
     @Test
-    void testPerimeter(){
-        Rectangle rect = new Rectangle(6, 5);
-        Assertions.assertEquals(22, rect.perimeter());
-        rect = new Rectangle(10, 5);
-        Assertions.assertEquals(30, rect.perimeter());
-        rect = new Rectangle(1, 3);
-        Assertions.assertEquals(8, rect.perimeter());
+    void testArea() {
+
+        Assertions.assertEquals(30, rect1.area());
+        Assertions.assertEquals(50, rect2.area());
+        Assertions.assertEquals(3, rect3.area());
     }
 
     @Test
-    void testIsSquare(){
-        Rectangle rect = new Rectangle(6, 5);
-        Assertions.assertEquals(false, rect.isSquare());
-        rect = new Rectangle(10, 10);
-        Assertions.assertEquals(true, rect.isSquare());
-        rect = new Rectangle(2, 3);
-        Assertions.assertEquals(false, rect.isSquare());
+    void testPerimeter() {
+        Assertions.assertEquals(22, rect1.perimeter());
+        Assertions.assertEquals(30, rect2.perimeter());
+        Assertions.assertEquals(8, rect3.perimeter());
+    }
+
+    @Test
+    void testIsSquare() {
+        Assertions.assertEquals(false, rect1.isSquare());
+        rect2 = new Rectangle(5, 5);
+        Assertions.assertEquals(true, rect2.isSquare());
+        Assertions.assertEquals(false, rect3.isSquare());
     }
 }
