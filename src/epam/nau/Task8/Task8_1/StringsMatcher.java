@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class StringsProcessing {
+public class StringsMatcher {
 
     private String fileString;
     private String firstName = null;
@@ -20,11 +20,11 @@ public class StringsProcessing {
     private String sunPattern = "sun";
     private String hopePattern = "hope";
 
-    public StringsProcessing(String fileString) {
+    public StringsMatcher(String fileString) {
         this.fileString = fileString;
     }
 
-    public void processing(){
+    public void processing() {
         matchWordSummer();
         matchWordSnow();
         matchWordSun();
@@ -42,10 +42,10 @@ public class StringsProcessing {
         }
     }
 
-    private void setPlace(String word, int match){
-        if (match > thirdMatch){
-            if (match > secondMatch){
-                if (match > firstMatch){
+    private void setPlace(String word, int match) {
+        if (match > thirdMatch) {
+            if (match > secondMatch) {
+                if (match > firstMatch) {
                     thirdMatch = secondMatch;
                     thirdName = secondName;
                     secondMatch = firstMatch;
