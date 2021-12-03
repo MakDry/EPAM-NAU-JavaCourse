@@ -1,5 +1,7 @@
 package epam.nau.MVCPractice;
 
+import java.util.Random;
+
 public class Game extends User {
     private int randMin;
     private int randMax;

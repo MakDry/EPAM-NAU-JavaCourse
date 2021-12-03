@@ -12,16 +12,16 @@ public class GameController {
         this.gameView = gameView;
     }
 
-    public void gameProcessing(){
+    public void gameProcessing() {
         int numberOfPlayers = inputNumberOfPlayers();
         for (int i = 0; i < numberOfPlayers; i++) {
-            playersProcessing(numberOfPlayers);
+            playersProcessing();
             gameplay();
             gameView.viewGameResult(game.getUsername(), game.getRollNum());
         }
     }
 
-    private void playersProcessing(int numberOfPlayers){
+    private void playersProcessing() {
         String playerName = inputUsername();
         int min = inputMin();
         int max = inputMax();
@@ -44,18 +44,18 @@ public class GameController {
         }
     }
 
-    private int inputNumberOfPlayers(){
+    private int inputNumberOfPlayers() {
         gameView.printMessage(GameView.NUMBER_OF_PLAYERS);
-        while(!input.hasNextInt()){
+        while (!input.hasNextInt()) {
             gameView.printMessage(GameView.WRONG_INPUT_DATA);
             input.next();
         }
         return input.nextInt();
     }
 
-    private String inputUsername(){
+    private String inputUsername() {
         gameView.printMessage(GameView.ADD_USERNAME);
-        while(!input.hasNextLine()){
+        while (!input.hasNextLine()) {
             gameView.printMessage(GameView.WRONG_INPUT_DATA);
             input.next();
         }
@@ -64,27 +64,27 @@ public class GameController {
         return userName;
     }
 
-    private int inputMin(){
+    private int inputMin() {
         gameView.printMessage(GameView.ADD_MIN);
-        while(!input.hasNextInt()){
+        while (!input.hasNextInt()) {
             gameView.printMessage(GameView.WRONG_INPUT_DATA);
             input.next();
         }
         return input.nextInt();
     }
 
-    private int inputMax(){
+    private int inputMax() {
         gameView.printMessage(GameView.ADD_MAX);
-        while(!input.hasNextInt()){
+        while (!input.hasNextInt()) {
             gameView.printMessage(GameView.WRONG_INPUT_DATA);
             input.next();
         }
         return input.nextInt();
     }
 
-    private int inputDigit(){
+    private int inputDigit() {
         gameView.printMessage(GameView.INPUT_DIGIT);
-        while(!input.hasNextInt()){
+        while (!input.hasNextInt()) {
             gameView.printMessage(GameView.WRONG_INPUT_DATA);
             input.next();
         }
