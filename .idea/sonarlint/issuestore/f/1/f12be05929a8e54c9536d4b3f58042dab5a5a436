@@ -1,7 +1,0 @@
-
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(äÖÕ´ûÿÿÿÿ8¶È¯ÔĞ/
-U	java:S106"9Replace this use of System.out or System.err by a logger.(ş„†§8·È¯ÔĞ/
-Z	java:S106"9Replace this use of System.out or System.err by a logger.(ÃØìúúÿÿÿÿ8¸È¯ÔĞ/
-n
-java:S1192"LDefine a constant instead of duplicating this literal "\tresult = " 3 times.(äÖÕ´ûÿÿÿÿ8ºÈ¯ÔĞ/
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(øïÄ

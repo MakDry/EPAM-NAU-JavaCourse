@@ -1,0 +1,14 @@
+
+p	java:S116"VRename this field "duplicate_1" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(º¾Ÿûùÿÿÿÿ
+k	java:S116"VRename this field "duplicate_2" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Àð£˜
+p	java:S116"VRename this field "duplicate_3" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(½ì“Üüÿÿÿÿ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(âýŸA
+/
+java:S2178"Correct this "&" to "&&".(ùù—Ž
+4
+java:S2178"Correct this "&" to "&&".(ßã€²üÿÿÿÿ
+H
+java:S1128"-Remove this unused import 'java.util.Locale'.(åð×±ûÿÿÿÿ
+R
+java:S4973"<Strings and Boxed types should be compared using "equals()".(„¼Ô
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ö—Þ™ÿÿÿÿÿ
