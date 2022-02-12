@@ -8,7 +8,7 @@ public class ArrayImpl implements Array {
     private Object[] array;
     private IteratorImpl iterator = new IteratorImpl();
 
-    public ArrayImpl(){
+    public ArrayImpl() {
         array = new Object[4];
     }
 
@@ -41,24 +41,13 @@ public class ArrayImpl implements Array {
             counter = 0;
             array = newArr;
         }
-
-        @Override
-        public String toString(){
-            counter = 0;
-            String output = "";
-            while(iterator.hasNext()){
-                output += iterator.next() + " ";
-            }
-            counter = 0;
-            return output;
-        }
     }
 
     @Override
     public void add(Object element) {
         while (true) {
             for (int i = 0; i < array.length; i++) {
-                if (array[i] == null){
+                if (array[i] == null) {
                     array[i] = element;
                     return;
                 }
@@ -92,13 +81,13 @@ public class ArrayImpl implements Array {
     public void remove(int index) {
         indexChecker(index);
         Object[] newArr;
-            newArr = new Object[array.length - 1];
-            for (int j = 0; j < index; j++) {
-                newArr[j] = array[j];
-            }
-            for (int j = index; j < array.length - 1; j++) {
-                newArr[j] = array[j + 1];
-            }
+        newArr = new Object[array.length - 1];
+        for (int j = 0; j < index; j++) {
+            newArr[j] = array[j];
+        }
+        for (int j = index; j < array.length - 1; j++) {
+            newArr[j] = array[j + 1];
+        }
         array = newArr;
     }
 
