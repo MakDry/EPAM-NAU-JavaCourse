@@ -1,6 +1,6 @@
-package advanced.Practical1.Task1.test;
+package ua.advanced.Practical1.Task1.test;
 
-import advanced.Practical1.Task1.house.House;
+import ua.advanced.Practical1.Task1.house.House;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

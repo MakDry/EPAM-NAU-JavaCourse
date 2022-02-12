@@ -1,4 +1,4 @@
-package advanced.Practical1.Task1.residents.cats;
+package ua.advanced.Practical1.Task1.residents.cats;
 
 public class Kitten extends Cat {
 

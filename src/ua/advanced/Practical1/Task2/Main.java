@@ -1,4 +1,4 @@
-package advanced.Practical1.Task2;
+package ua.advanced.Practical1.Task2;
 
 public class Main {
     private static Object A;

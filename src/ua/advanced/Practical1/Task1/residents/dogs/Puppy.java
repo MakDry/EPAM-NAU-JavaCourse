@@ -1,4 +1,4 @@
-package advanced.Practical1.Task1.residents.dogs;
+package ua.advanced.Practical1.Task1.residents.dogs;
 
 public class Puppy extends Dog {
 
