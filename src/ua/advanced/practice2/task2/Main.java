@@ -1,36 +1,43 @@
 package ua.advanced.practice2.task2;
 
+import ua.advanced.practice2.entity.City;
+import ua.advanced.practice2.entity.XMLDeserialization;
+
 import java.util.Iterator;
 
 public class Main {
-    private static Object A;
-    private static Object B;
-    private static Object C;
-    private static Object D;
+    private static City kyiv;
+    private static City lviv;
+    private static City cherkasy;
+    private static City kharkiv;
+    private static City zaporizhzhiya;
+    private static City[] cities;
 
     static{
-        A = "A";
-        B = "B";
-        C = "C";
-        D = "D";
+        cities = XMLDeserialization.deserializeFromXml();
+        kyiv = cities[0];
+        lviv = cities[1];
+        cherkasy = cities[2];
+        kharkiv = cities[3];
+        zaporizhzhiya = cities[4];
     }
 
     public static void main(String[] args) {
         QueueImpl queue = new QueueImpl();
-        queue.enqueue(A);
-        queue.enqueue(B);
-        queue.enqueue(C);
-        queue.enqueue(D);
+        queue.enqueue(kyiv);
+        queue.enqueue(lviv);
+        queue.enqueue(cherkasy);
+        queue.enqueue(kharkiv);
         System.out.println(">Queue after adding new objects: " + queue);
         System.out.println(">Queue size: " + queue.size());
 
         System.out.println(">Removed head: " + queue.dequeue());
-        System.out.println(">Queue after head removing: " + queue);
+        System.out.println("\n>Queue after head removing: " + queue);
 
         System.out.println(">The head of the queue: " + queue.top());
 
         queue.iterator().remove();
-        System.out.println(">Queue after removing first element by iterator: " + queue);
+        System.out.println("\n>Queue after removing first element by iterator: " + queue);
 
         System.out.println(">Queue output by iterator: " + printWithIterator(queue));
     }

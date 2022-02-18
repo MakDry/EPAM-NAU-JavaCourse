@@ -1,13 +1,15 @@
 package ua.advanced.practice2.task2;
 
+import ua.advanced.practice2.entity.City;
+
 import java.util.Arrays;
 import java.util.Iterator;
 
 public class QueueImpl implements Queue {
-    private Object[] queue;
+    private City[] queue;
 
     public QueueImpl() {
-        queue = new Object[4];
+        queue = new City[4];
     }
 
     private class IteratorImpl implements Iterator {
@@ -26,8 +28,8 @@ public class QueueImpl implements Queue {
 
         @Override
         public void remove() {
-            Object[] temp;
-            temp = new Object[queue.length - 1];
+            City[] temp;
+            temp = new City[queue.length - 1];
             for (int j = 0; j < counter; j++) {
                 temp[j] = queue[j];
             }
@@ -40,7 +42,7 @@ public class QueueImpl implements Queue {
     }
 
     @Override
-    public void enqueue(Object element) {
+    public void enqueue(City element) {
         for (int i = 0; i < queue.length; i++) {
             if (queue[i] == null) {
                 queue[i] = element;
@@ -50,11 +52,11 @@ public class QueueImpl implements Queue {
     }
 
     @Override
-    public Object dequeue() {
-        Object deletedHead = new Object();
+    public City dequeue() {
+        City deletedHead = new City();
         if (queue[0] != null) {
             deletedHead = queue[0];
-            Object[] temp = new Object[queue.length - 1];
+            City[] temp = new City[queue.length - 1];
             for (int i = 0; i < temp.length; i++) {
                 temp[i] = queue[i + 1];
             }
@@ -64,13 +66,13 @@ public class QueueImpl implements Queue {
     }
 
     @Override
-    public Object top() {
+    public City top() {
         return queue[0];
     }
 
     @Override
     public void clear() {
-        queue = new Object[queue.length];
+        queue = new City[queue.length];
     }
 
     @Override
@@ -90,6 +92,11 @@ public class QueueImpl implements Queue {
 
     @Override
     public String toString() {
-        return Arrays.toString(queue);
+        String out = "[";
+        for (City city : queue) {
+            out = out.concat(" " + city.getName());
+        }
+        out = out.concat(" ]");
+        return out;
     }
 }

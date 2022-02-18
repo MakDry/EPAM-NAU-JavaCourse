@@ -1,46 +1,51 @@
 package ua.advanced.practice2.task1;
 
+import ua.advanced.practice2.entity.City;
+import ua.advanced.practice2.entity.XMLDeserialization;
+
 import java.util.Iterator;
 
 public class Main {
-    private static Object A;
-    private static Object B;
-    private static Object C;
-    private static Object D;
-    private static Object H;
+    private static City kyiv;
+    private static City lviv;
+    private static City cherkasy;
+    private static City kharkiv;
+    private static City zaporizhzhiya;
+    private static City[] cities;
 
     static{
-        A = "A";
-        B = "B";
-        C = "C";
-        D = "D";
-        H = "H";
+        cities = XMLDeserialization.deserializeFromXml();
+        kyiv = cities[0];
+        lviv = cities[1];
+        cherkasy = cities[2];
+        kharkiv = cities[3];
+        zaporizhzhiya = cities[4];
     }
 
     public static void main(String[] args) {
         ListImpl list = new ListImpl();
-        list.addFirst(B);
-        list.addFirst(A);
-        list.addLast(C);
-        list.addLast(D);
+        list.addFirst(lviv);
+        list.addFirst(kyiv);
+        list.addLast(cherkasy);
+        list.addLast(kharkiv);
         System.out.println(">List after adding new objects: " + list);
         System.out.println(">List size: " + list.size());
 
-        System.out.println(">Try to delete object \'H\': " + list.remove(H));
-        System.out.println(">List after removing the object \'H\': " + list);
-        System.out.println(">Try to delete object \'D\': " + list.remove(D));
-        System.out.println(">List after removing the object \'D\': " + list);
+        System.out.println(">Try to delete object \'Zaporizhzhiya\': " + list.remove(zaporizhzhiya));
+        System.out.println(">List after unsuccessful removing the object \'Zaporizhzhiya\': " + list);
+        System.out.println(">Try to delete object \'Kharkiv\': " + list.remove(kharkiv));
+        System.out.println(">List after removing the object \'Kharkiv\': " + list);
 
         System.out.println(">Using method getFirst(): " + list.getFirst());
-        System.out.println(">Using method getLast(): " + list.getLast());
+        System.out.println("\n>Using method getLast(): " + list.getLast());
 
-        System.out.println(">Searching for object \'H\': " + list.search(H));
-        System.out.println(">Searching for object \'A\': " + list.search(A));
+        System.out.println("\n>Searching for object \'Zaporizhzhiya\': " + list.search(zaporizhzhiya));
+        System.out.println(">Searching for object \'Kyiv\': " + list.search(kyiv));
 
-        System.out.println(">List output by iterator: " + printWithIterator(list));
+        System.out.println("\n>List output by iterator: " + printWithIterator(list));
 
         list.removeFirst();
-        System.out.println(">List after removing first element: " + list);
+        System.out.println("\n>List after removing first element: " + list);
         list.removeLast();
         System.out.println(">List after removing last element: " + list);
 

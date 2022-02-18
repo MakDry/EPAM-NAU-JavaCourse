@@ -1,5 +1,7 @@
 package ua.advanced.practice2.task1;
 
+import ua.advanced.practice2.entity.City;
+
 import java.util.Iterator;
 
 public class ListImpl implements List {
@@ -10,23 +12,23 @@ public class ListImpl implements List {
     }
 
     private static class Node {
-        private Object object;
-        private Object nextObject;
+        private City object;
+        private Node nextObject;
 
-        public Node(Object object, Object nextObject) {
+        public Node(City object, Node nextObject) {
             this.object = object;
             this.nextObject = nextObject;
         }
 
-        public Object getObject() {
+        public City getObject() {
             return object;
         }
 
-        public Object getNextObject() {
+        public Node getNextObject() {
             return nextObject;
         }
 
-        public void setNextObject(Object nextObject) { // It can be useless
+        public void setNextObject(Node nextObject) { // It can be useless
             this.nextObject = nextObject;
         }
     }
@@ -81,7 +83,7 @@ public class ListImpl implements List {
     }
 
     @Override
-    public void addFirst(Object element) {
+    public void addFirst(City element) {
         if (list[0] != null) {
             Node[] temp = new Node[list.length + 1];
             for (int i = 0; i < list.length; i++) {
@@ -93,7 +95,7 @@ public class ListImpl implements List {
     }
 
     @Override
-    public void addLast(Object element) {
+    public void addLast(City element) {
         for (int i = 0; i < list.length; i++) {
             if (list[i] == null) {
                 list[i] = nodeCreator(element, i);
@@ -126,17 +128,17 @@ public class ListImpl implements List {
     }
 
     @Override
-    public Object getFirst() {
+    public City getFirst() {
         return list[0].getObject();
     }
 
     @Override
-    public Object getLast() {
+    public City getLast() {
         return list[size() - 1].getObject();
     }
 
     @Override
-    public Object search(Object element) {
+    public City search(City element) {
         for (Node node : list) {
             if (node != null) {
                 if (node.getObject().equals(element)) {
@@ -148,7 +150,7 @@ public class ListImpl implements List {
     }
 
     @Override
-    public boolean remove(Object element) {
+    public boolean remove(City element) {
         Node[] temp = new Node[list.length];
         for (int i = 0; i < list.length; i++) {
             if (list[i] != null && list[i].getObject().equals(element)) {
@@ -175,13 +177,13 @@ public class ListImpl implements List {
         String out = "[";
         for (Node node : list) {
             if (node != null)
-                out = out.concat(" " + node.getObject().toString());
+                out = out.concat(" " + node.getObject().getName());
         }
         out = out.concat(" ]");
         return out;
     }
 
-    private Node nodeCreator(Object element, int index) {
+    private Node nodeCreator(City element, int index) {
         return index == 0 ? new Node(element, list[1]) : new Node(element, null);
     }
 }

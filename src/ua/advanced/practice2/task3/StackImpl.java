@@ -1,12 +1,14 @@
 package ua.advanced.practice2.task3;
 
+import ua.advanced.practice2.entity.City;
+
 import java.util.Iterator;
 
 public class StackImpl implements Stack {
-    private Object[] stack;
+    private City[] stack;
 
     public StackImpl() {
-        stack = new Object[4];
+        stack = new City[4];
     }
 
     private class IteratorImpl implements Iterator {
@@ -25,7 +27,7 @@ public class StackImpl implements Stack {
 
         @Override
         public void remove() {
-            Object[] temp = new Object[stack.length - 1];
+            City[] temp = new City[stack.length - 1];
             stack[counter] = null;
             for (int i = 0; i < size(); i++) {
                 temp[i] = stack[i];
@@ -37,7 +39,7 @@ public class StackImpl implements Stack {
 
     @Override
     public void clear() {
-        stack = new Object[4];
+        stack = new City[4];
     }
 
     @Override
@@ -56,7 +58,7 @@ public class StackImpl implements Stack {
     }
 
     @Override
-    public void push(Object element) {
+    public void push(City element) {
         for (int i = 0; i < stack.length; i++) {
             if (stack[i] == null) {
                 stack[i] = element;
@@ -66,9 +68,9 @@ public class StackImpl implements Stack {
     }
 
     @Override
-    public Object pop() {
-        Object topElement = stack[size() - 1];
-        Object[] temp = new Object[stack.length - 1];
+    public City pop() {
+        City topElement = stack[size() - 1];
+        City[] temp = new City[stack.length - 1];
         for (int i = 0; i < (size() - 1); i++) {
             temp[i] = stack[i];
         }
@@ -77,16 +79,16 @@ public class StackImpl implements Stack {
     }
 
     @Override
-    public Object top() {
+    public City top() {
         return stack[size() - 1];
     }
 
     @Override
     public String toString() {
         String out = "[";
-        for (Object element : stack){
-            if (element != null){
-                out = out.concat(" " + element);
+        for (City city : stack){
+            if (city != null){
+                out = out.concat(" " + city.getName());
             }
         }
         out = out.concat(" ]");
