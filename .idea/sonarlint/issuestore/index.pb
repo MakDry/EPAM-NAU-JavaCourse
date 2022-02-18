@@ -27,17 +27,11 @@ S
 #src/ua/univer/Final task/readme.txt,a\0\a0d1a46a544da29f316483ae205ae8c65efb38f2
 M
 src/ua/univer/Task5/Main.java,2\7\2730693ba08d24ce20b9263f5a3426858f3b51fb
-g
-7src/advanced/Practical1/Task1/residents/dogs/Puppy.java,f\e\fe515eeb96854e4d9e1b7932ac1e2d668eb15e02
-e
-5src/advanced/Practical1/Task1/residents/dogs/Dog.java,6\3\63e1ec25aef10d2d9447a7879958934aa593015a
-h
-8src/advanced/Practical1/Task1/residents/cats/Kitten.java,7\3\73ad2c6d25f07675e9bcd33a0efc88c08894e972
-e
-5src/advanced/Practical1/Task1/residents/cats/Cat.java,1\6\16dc18fe14f3a71d16f256825ba6e013bc2f1602
-a
-1src/advanced/Practical1/Task1/test/HouseTest.java,0\2\026a37d02944ed91d653d0a0d00d8cbba3495a81
-]
--src/advanced/Practical1/Task1/house/Main.java,3\7\37d4fa4dfac96518e6ce492cad1262131365a4f1
+Z
+*src/ua/advanced/practice1/Task2/Array.java,d\6\d62d428972e952fbe446de8ad9d370f5ee13a721
+Y
+)src/ua/advanced/practice1/Task2/Main.java,0\a\0a2289e620063b2469c394ca9fcffb23454e76a7
 ^
-.src/advanced/Practical1/Task1/house/House.java,a\e\ae33e977f309a932487151100b026a65d5d3e250
+.src/ua/advanced/practice1/Task2/Container.java,8\a\8a425f503d6a70c6af3924318799eaa479bf87c9
+^
+.src/ua/advanced/practice1/Task2/ArrayImpl.java,3\f\3f4a913456cc0655daa694b149acb1a5453c3e52
