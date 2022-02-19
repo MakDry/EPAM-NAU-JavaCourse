@@ -1,0 +1,12 @@
+
+E
+java:S3740."/Provide the parametrized type for this generic.(ô¹â¨
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ñ¼¢
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(éÌÜÍ
+S	java:S106""9Replace this use of System.out or System.err by a logger.(ˆªÀÄøÿÿÿÿ
+N	java:S106#"9Replace this use of System.out or System.err by a logger.(‘ñøÈ
+S	java:S106%"9Replace this use of System.out or System.err by a logger.(ÿ¿áùÿÿÿÿ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(¸Ú”‘ûÿÿÿÿ
+T	java:S106*"9Replace this use of System.out or System.err by a logger.(Ã¡¢8”ÊÉğ/
+S
+java:S1068"1Remove this unused "zaporizhzhiya" private field.( ëÚØüÿÿÿÿ8İŠæğ/
