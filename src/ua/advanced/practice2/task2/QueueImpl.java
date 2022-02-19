@@ -1,8 +1,6 @@
 package ua.advanced.practice2.task2;
 
 import ua.advanced.practice2.entity.City;
-
-import java.util.Arrays;
 import java.util.Iterator;
 
 public class QueueImpl implements Queue {

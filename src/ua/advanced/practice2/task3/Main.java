@@ -1,6 +1,7 @@
 package ua.advanced.practice2.task3;
 
 import ua.advanced.practice2.entity.City;
+import ua.advanced.practice2.entity.JSONSerializer;
 import ua.advanced.practice2.entity.XMLDeserialization;
 
 import java.util.Iterator;
@@ -12,6 +13,7 @@ public class Main {
     private static City kharkiv;
     private static City zaporizhzhiya;
     private static City[] cities;
+    private static final String FILE_PATH;
 
     static{
         cities = XMLDeserialization.deserializeFromXml();
@@ -20,6 +22,7 @@ public class Main {
         cherkasy = cities[2];
         kharkiv = cities[3];
         zaporizhzhiya = cities[4];
+        FILE_PATH = "resources\\practice2\\StackData.json";
     }
 
     public static void main(String[] args) {
@@ -30,6 +33,8 @@ public class Main {
         stack.push(kharkiv);
         System.out.println(">Stack after pushing elements: " + stack);
         System.out.println(">Stack size: " + stack.size());
+        JSONSerializer.serializeToJson(stack, FILE_PATH);
+
         System.out.println(">Pop top element from stack: " + stack.pop());
         System.out.println("\n>Stack after popping: " + stack);
         System.out.println(">Getting the top element from stack: " + stack.top());

@@ -1,4 +1,4 @@
-package ua.advanced.practice1.Task2;
+package ua.advanced.practice1.task2;
 
 import java.util.Iterator;
 

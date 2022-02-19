@@ -1,4 +1,4 @@
-package ua.advanced.practice1.Task2;
+package ua.advanced.practice1.task2;
 
 public interface Array extends Container{
     void add(Object element); // Add the specified element to the end.

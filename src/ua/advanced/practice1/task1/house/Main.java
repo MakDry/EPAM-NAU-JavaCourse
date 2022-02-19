@@ -1,10 +1,10 @@
-package ua.advanced.practice1.Task1.house;
+package ua.advanced.practice1.task1.house;
 
 
-import ua.advanced.practice1.Task1.residents.cats.Cat;
-import ua.advanced.practice1.Task1.residents.cats.Kitten;
-import ua.advanced.practice1.Task1.residents.dogs.Dog;
-import ua.advanced.practice1.Task1.residents.dogs.Puppy;
+import ua.advanced.practice1.task1.residents.cats.Cat;
+import ua.advanced.practice1.task1.residents.cats.Kitten;
+import ua.advanced.practice1.task1.residents.dogs.Dog;
+import ua.advanced.practice1.task1.residents.dogs.Puppy;
 
 public class Main {
 

@@ -50,7 +50,8 @@ public class ListImpl implements List {
         @Override
         public void remove() {
             Node[] temp = new Node[list.length];
-            list[counter - 1].setNextObject(list[counter + 1]);
+            if (counter - 1 > -1 && counter + 1 < list.length)
+                list[counter - 1].setNextObject(list[counter + 1]);
             list[counter] = null;
             for (int i = 0; i < list.length; i++) {
                 if (list[i] != null) {

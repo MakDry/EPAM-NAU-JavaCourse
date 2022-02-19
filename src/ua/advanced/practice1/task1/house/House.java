@@ -1,4 +1,4 @@
-package ua.advanced.practice1.Task1.house;
+package ua.advanced.practice1.task1.house;
 
 import java.util.ArrayList;
 import java.util.List;

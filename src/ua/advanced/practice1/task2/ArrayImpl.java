@@ -1,4 +1,4 @@
-package ua.advanced.practice1.Task2;
+package ua.advanced.practice1.task2;
 
 import java.util.Arrays; // З даної бібібліотеки було використано лише методи copyOf() та toString(), для виводу та створення динамічного масиву
 import java.util.Iterator;

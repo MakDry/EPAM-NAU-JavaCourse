@@ -1,6 +1,6 @@
 package ua.advanced.practice2.task1;
 
-import ua.advanced.practice1.Task2.Container;
+import ua.advanced.practice1.task2.Container;
 import ua.advanced.practice2.entity.City;
 
 public interface List extends Container {

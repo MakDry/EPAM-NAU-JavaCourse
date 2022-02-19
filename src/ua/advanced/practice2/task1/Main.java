@@ -1,6 +1,7 @@
 package ua.advanced.practice2.task1;
 
 import ua.advanced.practice2.entity.City;
+import ua.advanced.practice2.entity.JSONSerializer;
 import ua.advanced.practice2.entity.XMLDeserialization;
 
 import java.util.Iterator;
@@ -12,6 +13,7 @@ public class Main {
     private static City kharkiv;
     private static City zaporizhzhiya;
     private static City[] cities;
+    private static final String FILE_PATH;
 
     static{
         cities = XMLDeserialization.deserializeFromXml();
@@ -20,6 +22,7 @@ public class Main {
         cherkasy = cities[2];
         kharkiv = cities[3];
         zaporizhzhiya = cities[4];
+        FILE_PATH = "resources\\practice2\\ListData.json";
     }
 
     public static void main(String[] args) {
@@ -30,6 +33,7 @@ public class Main {
         list.addLast(kharkiv);
         System.out.println(">List after adding new objects: " + list);
         System.out.println(">List size: " + list.size());
+        JSONSerializer.serializeToJson(list, FILE_PATH);
 
         System.out.println(">Try to delete object \'Zaporizhzhiya\': " + list.remove(zaporizhzhiya));
         System.out.println(">List after unsuccessful removing the object \'Zaporizhzhiya\': " + list);

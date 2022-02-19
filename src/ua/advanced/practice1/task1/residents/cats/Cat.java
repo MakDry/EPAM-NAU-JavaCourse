@@ -1,4 +1,4 @@
-package ua.advanced.practice1.Task1.residents.cats;
+package ua.advanced.practice1.task1.residents.cats;
 
 public class Cat {
 
