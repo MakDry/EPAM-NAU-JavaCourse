@@ -1,6 +1,4 @@
 
-<
-EPAM_NAU.iml,d\4\d443d6d4de11259965af31e014cfee33bb624fd9
 S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 ;
@@ -49,9 +47,25 @@ Y
 )src/ua/advanced/practice2/task2/Main.java,d\c\dc36f875752ea915f7131b64de4ff07d97627b3d
 d
 4src/ua/advanced/practice2/entity/JSONSerializer.java,9\6\96a4ed709d6a65cb9e206f608f14dc53da203c77
-Y
-)src/ua/advanced/practice2/task3/Main.java,1\a\1a13fa3a2ddafb21fd5204eb5868559bdcdec435
 ]
 -src/ua/advanced/practice2/task1/ListImpl.java,2\2\22b2117548a7a254b6399e35ee19a4dcf07888d6
 Y
 )src/ua/advanced/practice2/task1/Main.java,c\2\c2decd653589702db336d31196686a369d5ae624
+g
+7src/ua/advanced/practice2/task2/test/QueueImplTest.java,c\d\cd73a7ae83d155a496aef2dce2c59e87ff2e5c9f
+g
+7src/ua/advanced/practice2/task3/test/StackImplTest.java,8\5\850a2b5e8b0ab88fec15b7505f929ca983c10dc7
+^
+.src/ua/advanced/practice2/task3/StackImpl.java,f\0\f0914e35377cf825eb9aca736217902793d1cb5e
+a
+1src/ua/univer/Task10/test/testUserKMDAHelper.java,e\8\e88e2484fb819e6012db5bb373fe13bb34833c8b
+f
+6src/ua/advanced/practice2/task1/test/ListImplTest.java,e\9\e90dfb0cf4e7b183765097073d5ac78a606cc939
+Z
+*src/ua/advanced/practice2/entity/City.java,2\e\2e8c4bd74d64717e7d0604fd7600ed9730ec019b
+^
+.src/ua/advanced/practice1/task2/Container.java,a\9\a9c43bfec7432f2de384151aa770a520ce651d2b
+Y
+)src/ua/advanced/practice2/task3/Main.java,1\a\1a13fa3a2ddafb21fd5204eb5868559bdcdec435
+<
+EPAM_NAU.iml,d\4\d443d6d4de11259965af31e014cfee33bb624fd9
