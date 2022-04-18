@@ -1,0 +1,13 @@
+
+E
+java:S3740"/Provide the parametrized type for this generic.(ËŠÇ×
+E
+java:S3740A"/Provide the parametrized type for this generic.(µì£
+J
+java:S3740B"/Provide the parametrized type for this generic.(“òÁ‹ıÿÿÿÿ
+a
+java:S6206"LRefactor this class declaration to use 'record Cell(int key, String value)'.(íŠl
+p
+java:S22725"NAdd a "NoSuchElementException" for iteration beyond the end of the collection.(®îşÿÿÿÿ8´Æ·âı/
+‡
+java:S1319A"qThe return type of this method should be an interface such as "Set" rather than the implementation "AbstractSet".(µì£

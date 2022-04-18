@@ -69,3 +69,21 @@ Y
 )src/ua/advanced/practice2/task3/Main.java,1\a\1a13fa3a2ddafb21fd5204eb5868559bdcdec435
 <
 EPAM_NAU.iml,d\4\d443d6d4de11259965af31e014cfee33bb624fd9
+^
+.src/ua/advanced/practice2/task2/QueueImpl.java,7\f\7f463165f255d16bd824bb952b51e31da0319a35
+Y
+)src/ua/advanced/practice3/task5/Main.java,7\7\77c2a85ac4153e94f8fd0935b1eb5a52d3b2179b
+`
+0src/ua/advanced/practice3/task5/MedianQueue.java,a\7\a7b8f661041ef5c2101c4cda89648e30283b82d8
+l
+<src/ua/advanced/practice3/task4/AbsoluteValueIntegerSet.java,6\9\692d5f45bc5c276f3dda27c2c8a0181f42b6fb71
+Y
+)src/ua/advanced/practice3/task4/Main.java,8\b\8bab74765728d396c7eef412027dbd7aca20474d
+Y
+)src/ua/advanced/practice3/task3/Main.java,0\3\03dff2bf7acb75b703d141e820ecf68faafb3bd3
+c
+3src/ua/advanced/practice3/task3/PairStringList.java,b\3\b3bd6bef3113c453244eef5d7e103e23a13a8a79
+g
+7src/ua/advanced/practice3/task2/IntStringCappedMap.java,0\1\013dd5ab789bb9d8764018436030d71d06e0125f
+Y
+)src/ua/advanced/practice3/task2/Main.java,7\3\7384b24aecb7d258c8166989034cf9d1f8a0b747
