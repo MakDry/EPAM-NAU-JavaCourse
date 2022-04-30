@@ -1,4 +1,4 @@
-package com.epam.rd.autocode;
+package ua.advanced.practice6;
 
 public interface Named {
     String name();
