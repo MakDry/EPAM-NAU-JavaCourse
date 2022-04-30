@@ -1,4 +1,4 @@
-package com.epam.rd.autocode.startegy.cards;
+package ua.advanced.practice6.strategy.cards;
 
 import java.util.List;
 import java.util.Map;

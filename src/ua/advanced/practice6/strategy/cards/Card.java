@@ -1,6 +1,6 @@
-package com.epam.rd.autocode.startegy.cards;
+package ua.advanced.practice6.strategy.cards;
 
-import com.epam.rd.autocode.Named;
+import ua.advanced.practice6.Named;
 
 public interface Card extends Named {
 }
