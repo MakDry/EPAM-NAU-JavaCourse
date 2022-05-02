@@ -1,4 +1,4 @@
-package com.epam.rd.autocode.observer.git;
+package ua.advanced.practice6.observer.git;
 
 import java.util.List;
 

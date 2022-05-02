@@ -1,8 +1,24 @@
-package com.epam.rd.autocode.observer.git;
+package ua.advanced.practice6.observer.git;
 
 public class GitRepoObservers {
     public static Repository newRepository(){
-        throw new UnsupportedOperationException();
+        return new Repository() {
+
+            @Override
+            public void addWebHook(WebHook webHook) {
+
+            }
+
+            @Override
+            public Commit commit(String branch, String author, String[] changes) {
+                throw new UnsupportedOperationException();
+            }
+
+            @Override
+            public void merge(String sourceBranch, String targetBranch) {
+
+            }
+        };
     }
 
     public static WebHook mergeToBranchWebHook(String branchName){
@@ -12,6 +28,4 @@ public class GitRepoObservers {
     public static WebHook commitToBranchWebHook(String branchName){
         throw new UnsupportedOperationException();
     }
-
-
 }

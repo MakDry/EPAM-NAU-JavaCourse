@@ -1,4 +1,4 @@
-package com.epam.rd.autocode.observer.git;
+package ua.advanced.practice6.observer.git;
 
 public interface Repository {
     void addWebHook(WebHook webHook);
