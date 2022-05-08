@@ -1,11 +1,14 @@
 package ua.advanced.practice6.observer.git;
 
+import ua.advanced.practice6.customAnnotations.NotNull;
+
 import java.util.List;
 import java.util.Objects;
 import java.util.StringJoiner;
 
 public class Event {
     private Type type;
+    @NotNull
     private String branch;
     private List<Commit> commits;
 

@@ -1,0 +1,15 @@
+
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Å‘ãÒ
+t
+java:S2142)"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(Ûž•÷
+N	java:S106'"9Replace this use of System.out or System.err by a logger.(Œä’“
+O
+java:S2274(":Remove this call to "wait" or move it into a "while" loop.(ç£ŠM
+t
+java:S2142?"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€
+N	java:S1066"9Replace this use of System.out or System.err by a logger.(Ûž•÷
+N	java:S106="9Replace this use of System.out or System.err by a logger.(Œä’“
+O
+java:S2274>":Remove this call to "wait" or move it into a "while" loop.(ç£ŠM
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(—ù”®üÿÿÿÿ

@@ -1,10 +1,13 @@
 package ua.advanced.practice6.observer.git;
 
+import ua.advanced.practice6.customAnnotations.NotNull;
+
 import java.util.Arrays;
 import java.util.Objects;
 import java.util.StringJoiner;
 
 public class Commit{
+    @NotNull
     private String author;
     private String[] changes;
 

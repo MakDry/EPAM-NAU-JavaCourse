@@ -1,7 +1,10 @@
 package ua.advanced.practice6.factory.plot;
 
+import ua.advanced.practice6.customAnnotations.Range;
+
 public class PlotFactories {
 
+    @Range
     public PlotFactory classicDisneyPlotFactory(Character hero, Character beloved, Character villain) {
         String heroName = hero.name();
         String belovedName = beloved.name();
@@ -16,6 +19,7 @@ public class PlotFactories {
         };
     }
 
+    @Range(min = 300, max = 360)
     public PlotFactory contemporaryDisneyPlotFactory(Character hero, EpicCrisis epicCrisis, Character funnyFriend) {
         String heroName = hero.name();
         String epicCrisisName = epicCrisis.name();
@@ -31,6 +35,7 @@ public class PlotFactories {
         };
     }
 
+    @Range(min = 110, max = 400)
     public PlotFactory marvelPlotFactory(Character[] heroes, EpicCrisis epicCrisis, Character villain) {
         String epicCrisisName = epicCrisis.name();
         String villainName = villain.name();

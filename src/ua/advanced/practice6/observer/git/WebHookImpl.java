@@ -1,9 +1,12 @@
 package ua.advanced.practice6.observer.git;
 
+import ua.advanced.practice6.customAnnotations.NotNull;
+
 import java.util.ArrayList;
 import java.util.List;
 
 public class WebHookImpl implements WebHook {
+    @NotNull
     private String branchName;
     private Event.Type type;
     private List<Event> events;
