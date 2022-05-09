@@ -1,23 +1,0 @@
-
-J
-java:S37400"/Provide the parametrized type for this generic.(ò·Ã½úÿÿÿÿ
-g
-java:S3008"LRename this field "A" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(à²«ÿûÿÿÿÿ
-g
-java:S3008"LRename this field "B" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Œ…ö¾ùÿÿÿÿ
-g
-java:S3008"LRename this field "C" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¾ã—Üıÿÿÿÿ
-g
-java:S3008	"LRename this field "D" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(£µ÷ùÿÿÿÿ
-M	java:S106"9Replace this use of System.out or System.err by a logger.(¦³á;
-N	java:S106"9Replace this use of System.out or System.err by a logger.(š’¾ª
-S	java:S106"9Replace this use of System.out or System.err by a logger.(ÎŸı³úÿÿÿÿ
-S	java:S106"9Replace this use of System.out or System.err by a logger.(©¯İüÿÿÿÿ
-M	java:S106!"9Replace this use of System.out or System.err by a logger.(Æ€Ä%
-N	java:S106$"9Replace this use of System.out or System.err by a logger.(ô»‘œ
-N	java:S106&"9Replace this use of System.out or System.err by a logger.(íÒ¨©
-S	java:S106)"9Replace this use of System.out or System.err by a logger.(âšŞ±ûÿÿÿÿ
-N	java:S106,"9Replace this use of System.out or System.err by a logger.(ûò€ñ
-1
-java:S16433"Use a StringBuilder instead.(Âæ¥`
-o	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(«ÒÃ»
